@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pichau.casainteligente.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAlarme"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="false"
+                    android:foreground="?android:selectableItemBackground"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="3"
+                    app:cardBackgroundColor="@color/ColorDarkBlue"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iconAlarme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_alarm_light"
+                            android:tint="@color/colorTextPrimary" />
+
+                        <TextView
+                            android:id="@+id/tvAlarme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="ALARME ON"
+                            android:textColor="@color/colorTextPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvLampadas"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    app:cardBackgroundColor="@color/colorCardViewBlueLight"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_lightbulb_on"
+                            android:tint="@color/colorTextPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="LÂMPADAS"
+                            android:textColor="@color/colorTextPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:weightSum="5">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="3"
+                    app:cardBackgroundColor="@color/colorCardViewGreenLight"
+                    app:cardCornerRadius="0dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/ic_thermometer_tool"
+                            android:tint="@color/colorTextPrimary" />
+
+                        <TextView
+                            android:id="@+id/tvTemperatura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="28sp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/ic_temperature_celsius"
+                            android:tint="@color/colorTextPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvPlantas"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    app:cardBackgroundColor="@color/colorCardViewOrangeLight"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_flower"
+                            android:tint="@color/colorTextPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="PLANTAS"
+                            android:textColor="@color/colorTextPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="6dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAlerta"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorCardViewAlert"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/ic_phone_with_bluetooth"
+                            android:tint="@color/colorTextPrimary" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvAvisos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Aviso !"
+                                android:textColor="@color/colorTextPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvAvisos2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="0dp"
+                                android:text="Selecione um dispositivo pareado..."
+                                android:textColor="@color/colorTextPrimary"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btSelecionarDisp"
+                android:layout_width="220dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/colorCardViewGreenLightFlat"
+                android:textColor="@color/colorTextPrimary"
+                android:text="Selecionar Dispositivo"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btParearDisp"
+                android:layout_width="220dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/colorCardViewGreenLightFlat"
+                android:visibility="gone"
+                android:textColor="@color/colorTextPrimary"
+                android:text="Conectar com o DISPOSITIVO"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvInformacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                app:cardBackgroundColor="#1abc9c"
+                app:cardCornerRadius="0dp">
+
+                <TextView
+                    android:id="@+id/tvInformacoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="Casa Inteligente"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorTextPrimary" />
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:max="100"
+            android:backgroundTint="@color/colorCardViewBlue"
+            android:indeterminateTint="@color/colorCardViewBlueLight"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

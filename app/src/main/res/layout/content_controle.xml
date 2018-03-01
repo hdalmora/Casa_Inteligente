@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pichau.casainteligente.ControleActivity"
+    tools:showIn="@layout/activity_controle"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvQuarto"
+                android:layout_width="0dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="145dp"
+                app:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/ColorDarkBlue"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:elevation="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        android:foregroundGravity="center"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/ic_bed" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="#F0F1F5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="Quarto"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="18"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="22sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="2 Lâmpadas"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="14"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="12sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvBanheiro"
+                android:layout_width="0dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="145dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="0dp"
+                app:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/ColorDarkBlue"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:elevation="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        android:foregroundGravity="center"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/ic_shower3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="#F0F1F5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="Banheiro"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="18"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="22sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="1 Lâmpada"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="14"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="12sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSala"
+                android:layout_width="0dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="145dp"
+                app:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/ColorDarkBlue"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:elevation="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        android:foregroundGravity="center"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/ic_sofa" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="#F0F1F5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="Sala"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="18"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="22sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="6 Lâmpadas"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="14"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="12sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvCozinha"
+                android:layout_width="0dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="145dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="0dp"
+                app:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/ColorDarkBlue"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:elevation="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        android:foregroundGravity="center"
+                        android:padding="10dp"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/ic_whisk" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="#F0F1F5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="Cozinha"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="18"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="22sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="4dp"
+                                android:text="3 Lâmpadas"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:maxEms="14"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textSize="12sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:gravity="start"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

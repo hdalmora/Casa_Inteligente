@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#3498db</color>
+
+
+    <color name="ColorBG">#303030</color>
+    <color name="ColorDarkBlue">#34495e</color>
+    <color name="colorCardViewBlack">#424242</color>
+    <color name="colorCardViewGreen">#81C784</color>
+    <color name="colorCardViewGreenLightFlat">#2ecc71</color>
+    <color name="colorCardViewBlue">#2980b9</color>
+    <color name="colorCardViewBlueLight">#00BCD4</color>
+    <color name="colorCardViewGreenLight">#91B496</color>
+    <color name="colorCardViewOrangeLight">#FF9800</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextGray">#90A4AE</color>
+    <color name="colorCardViewAlert">#f1c40f</color>
+    <color name="colorCardViewRED">#c0392b</color>
+
+    <color name="colorFont">#eeeeee</color>
+    <color name="colorBackground">#2e2f30</color>
+    <color name="colorBtnBackgroundGreen">#27ae60</color>
+</resources>

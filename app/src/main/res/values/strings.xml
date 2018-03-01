@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Casa Inteligente</string>
+    <string name="label_disp_pareados">Selecione um dispositivo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Novo dispositivo</string>
+    <string name="title_activity_lampadas">Controle de Lâmpadas</string>
+    <string name="title_activity_controle">Cômodos</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Controle da Casa">
+
+        <menu>
+            <item
+                android:id="@+id/nav_lampadas"
+                android:icon="@drawable/ic_lightbulb_on"
+                android:title="Lâmpadas" />
+            <item
+                android:id="@+id/nav_plantas"
+                android:icon="@drawable/ic_flower"
+                android:title="Plantas" />
+
+        </menu>
+    </item>
+
+    <item android:title="Geral">
+        <menu>
+            <item
+                android:id="@+id/nav_dispositivo"
+                android:icon="@drawable/ic_phone_with_bluetooth"
+                android:title="Novo Dispositivo" />
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Configurações" />
+        </menu>
+    </item>
+
+    <item android:title="Comunicação">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartilhar" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contato" />
+        </menu>
+    </item>
+
+</menu>
